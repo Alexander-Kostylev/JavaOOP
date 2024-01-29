@@ -11,4 +11,19 @@ public class Dog extends Animal {
     public Dog(){
         super();
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Гаф! Я не могу летать.");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Я могу плыть только по собачь. ");
+    }
+
+    @Override
+    public void toGo() {
+        System.out.println("Я могу ходить а еще люблю бегать и приносить палочки.");
+    }
 }
