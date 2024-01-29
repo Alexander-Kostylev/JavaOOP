@@ -2,7 +2,7 @@ package clients;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal{
+public class Cat extends Animal implements Goable {
 
     //Todo напомнить в чём разница в double
     Double discount;
@@ -15,6 +15,11 @@ public class Cat extends Animal{
     public Cat() {
         super();
         this.discount = 10D;
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Есть много и очень громко ночью");
     }
 
     public Double getDiscount() {
@@ -49,4 +54,10 @@ public class Cat extends Animal{
     public void toGo() {
         System.out.println("Лучше полежать, чем ходить");
     }
+
+    @Override
+    public double getRunSpead() {
+        return Goable.super.getRunSpead();
+    }
 }
+
