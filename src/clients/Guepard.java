@@ -2,7 +2,7 @@ package clients;
 
 import java.time.LocalDate;
 
-public class Guepard extends Animal{
+public class Guepard extends Animal implements Goable{
     Double speedRun;
 
     Guepard(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double speedRun){
@@ -15,7 +15,7 @@ public class Guepard extends Animal{
         this.speedRun = 20.0;
     }
 
-    @Override
+
     public void toGo() {
         System.out.println("Я умею бегать быстрее всех.");
     }
@@ -28,5 +28,10 @@ public class Guepard extends Animal{
     @Override
     public void swim() {
         System.out.println("Я могу переплыть не широкую реку");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Гепард есть");
     }
 }

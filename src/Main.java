@@ -6,8 +6,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-//        Animal cat = new Animal("Солнышко", new Owner("Сергей Валерьевич"),
-//                LocalDate.of(2021, 10, 05), new Illness("Лишай")); //Создаём экземпляр класса
+//        Animal cat = new Cat("Солнышко", new Owner("Сергей Валерьевич"),
+//                LocalDate.of(2021, 10, 05), new Illness("Лишай"), 10.0); //Создаём экземпляр класса
 //
 //        System.out.println(cat.getOwner());
 //        System.out.println(cat.getNickName());
@@ -19,11 +19,6 @@ public class Main {
 //
 //        System.out.println("Болезнь:" + cat.getIllness());
 //
-//
-//        Animal testAnimal = new Animal();
-//        System.out.println(testAnimal.getNickName());
-//
-//        cat.lifeCycle();
 //
 //        Animal catty = new Cat();
 //        Dog goodBoy = new Dog();
@@ -46,8 +41,6 @@ public class Main {
 //            System.out.println(i + " "+ animal);
 //            i++;
 //        }
-
-
-
+//
     }
 }

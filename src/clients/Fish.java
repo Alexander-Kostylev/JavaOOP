@@ -2,7 +2,7 @@ package clients;
 
 import java.time.LocalDate;
 
-public class Fish extends Animal{
+public class Fish extends Animal implements Goable{
 
     public Fish(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
@@ -28,5 +28,9 @@ public class Fish extends Animal{
     @Override
     public void swim() {
         System.out.println("Плаваю как рыба в воде)");
+    }
+
+    public void eat() {
+        System.out.println("Рыбка есть в воде");
     }
 }
