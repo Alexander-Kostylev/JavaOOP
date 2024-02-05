@@ -1,7 +1,7 @@
-import clients.Animal;
-import clients.Cat;
-import clients.Dog;
-import clients.Goable;
+import Patients.Animal;
+import Patients.Cat;
+import Patients.Dog;
+import Patients.Goable;
 
 import java.util.ArrayList;
 import java.util.List;
