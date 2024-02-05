@@ -1,10 +1,12 @@
-package clients;
+package Patients;
+
+import clients.Illness;
+import clients.Owner;
 
 import java.time.LocalDate;
 
 public abstract class Animal {
 
-    // protected видно в классе и во всех наследниках
     protected String nickName;
     protected Owner owner;
     protected LocalDate birthDate;
@@ -42,13 +44,6 @@ public abstract class Animal {
         this.illness = illness;
     }
 
-//    public void lifeCycle() {
-//        wakeUp("12:00");
-//        hunt();
-//        eat();
-//        sleep();
-//    }
-
     private void wakeUp() {
         wakeUp("12:00");
     }
@@ -66,27 +61,10 @@ public abstract class Animal {
     }
 
      public abstract void eat();
-//     {
-//        System.out.println("Животное ест!"); // удаляем т.к. метод абстрактный
-//    }
 
     private void sleep() {
         System.out.println("Животное уснуло!");
     }
-
-//    public void toGo(){
-//        System.out.println("Животное идет");
-//    }
-
-    public void fly() {
-        System.out.println("Животное летит");
-    }
-
-    public void swim(){
-        System.out.println("Животное плывет");
-    }
-
-
 
     @Override
     public String toString() {

@@ -25,17 +25,19 @@ class Calculator{
         map.put('r', arr -> Math.sqrt(arr[0]));
     }
     public static void main(String[] args) {
+
         System.out.println(calculate1('r', 25, 34));
     }
+
     public static double calculate(char op, double x, double y){
         if(op == '+') return x + y;
         if(op == '-') return x - y;
         if(op == '*') return x * y;
-        else throw new UnsupportedOperationException("Not empliments");
+        else throw new UnsupportedOperationException("Not impliments");
     }
 
     public static double calculate1(char op, double x, double y){
-       return map.get(op).calc(x, y);
+        return map.get(op).calc(x, y);
     }
 }
 

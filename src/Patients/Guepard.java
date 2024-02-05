@@ -1,4 +1,7 @@
-package clients;
+package Patients;
+
+import clients.Illness;
+import clients.Owner;
 
 import java.time.LocalDate;
 
@@ -21,13 +24,8 @@ public class Guepard extends Animal implements Goable{
     }
 
     @Override
-    public void fly() {
-        System.out.println("Мне не надо летать, я быстро бегаю");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("Я могу переплыть не широкую реку");
+    public double getRunSpead() {
+        return 110D;
     }
 
     @Override

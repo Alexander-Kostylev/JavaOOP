@@ -1,4 +1,11 @@
+import Employee.Doctor;
+import Employee.Nurse;
+import Employee.Employee;
+import Patients.*;
+import VeterinaryClinic.Operation;
 import clients.*;
+
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,5 +49,40 @@ public class Main {
 //            i++;
 //        }
 //
+        Doctor doc1 = new Doctor();
+        Doctor doc2 = new Doctor();
+        Employee nusre1 = new Nurse();
+        Employee nusre2 = new Nurse();
+
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Animal dog1 = new Dog();
+        Animal peng1 = new Penguin();
+
+
+        Operation operation = new Operation(doc1, LocalDate.now(), cat1);
+
+        operation.getOperation();
+
+        List<Employee> employees = new ArrayList<>();
+
+        employees.add(doc1);
+        employees.add(doc2);
+        employees.add(nusre1);
+        employees.add(nusre2);
+
+
+        List<Animal> patients = new ArrayList<>();
+
+        patients.add(cat1);
+        patients.add(dog1);
+        patients.add(peng1);
+        patients.add(cat2);
+
+        
+
+        System.out.printf("Всего в больнице рабоет %s сотрудника\n", employees.size());
+
+        System.out.printf("Cейчас в больнице находятся %s животных\n", patients.size());
     }
 }

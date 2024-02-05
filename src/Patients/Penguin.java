@@ -1,8 +1,11 @@
-package clients;
+package Patients;
+
+import clients.Illness;
+import clients.Owner;
 
 import java.time.LocalDate;
 
-public class Penguin extends Animal implements Goable{
+public class Penguin extends Animal implements Goable, Swimmable{
 
     public Penguin(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
@@ -12,15 +15,9 @@ public class Penguin extends Animal implements Goable{
     }
 
     @Override
-    public void fly() {
-        System.out.println("Не умею летать, хоть я и птица!");
+    public double getSwimSpeed() {
+        return 35D;
     }
-
-    @Override
-    public void swim() {
-        System.out.println("Хорошо плаваю");
-    }
-
 
     public void toGo() {
         System.out.println("Хожу очень медленно");
