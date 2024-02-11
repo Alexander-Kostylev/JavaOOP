@@ -1,4 +1,4 @@
-package seminar4.homeWork.util;
+package seminar4.homeWorkLinkList.util;
 
 import java.util.Iterator;
 
