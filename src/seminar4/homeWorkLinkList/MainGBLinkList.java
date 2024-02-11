@@ -1,10 +1,9 @@
-package seminar4.homeWork;
+package seminar4.homeWorkLinkList;
 
-import seminar4.homeWork.impl.GBLinkList;
+import seminar4.homeWorkLinkList.impl.GBLinkList;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class MainGBLinkList {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package seminar4.homeWork.impl;
+package seminar4.homeWorkLinkList.impl;
 
 import seminar4.list.core.GBList;
 
